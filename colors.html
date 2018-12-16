@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Colors! | A random hex color generator</title>
+        <meta name="description" content="A random color generator and editor for all your random color needs!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/colors.css">
+    </head>
+    <body>
+
+        <div class="container-column">
+            <!-- main body div of "generators" -->
+            <main class="container">
+
+                <!-- container for title, instructions and buttons -->
+                <div class="subContainer">
+                    <h1>Colors!</h1>
+                    <hr>
+                    <div class="inst">
+                        <h4>Instructions:</h4>
+                        <p>Click the  "Generate" button below to generate a random <span id="colorType">hex-6</span> color.</p>
+                        <p>Use the "Invert" button to swap the background with its inverse.</p>
+                        <p>Your color will appear as the background and display below.</p>
+                    </div>
+                    <hr> 
+                    <div class="display">
+                        <p><span class="spanA"></span></p>
+                        <p><span class="spanB"></span></p>
+                    </div>   
+                    <div class="buttons">
+                        <div class="left">
+                            <button id="undo"><i class="fas fa-undo-alt"></i></i></button>
+                            <button class="next hide">< Next</button>
+                        </div>
+                        <div class="center">
+                            <button id="generator">Generate</button>
+                            <button id="invertor">Invert</button> 
+                        </div>
+                        <div class="right">
+                            <button class="prev hide">Prev ></button>
+                            <button id="controlToggle"><i class="fas fa-plus tog"></i><i class="fas fa-minus hide tog"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- control menu, togglable, hidden on refresh -->
+                <div id="controls" class="hidden">
+                    <div id="drop" class="controler">
+                        <label for="colorType">Color type:</label>
+                        <select name="colorType" id="selectColorType">
+                            <option value="hex6">HEX-6</option>
+                            <option value="hex3">HEX-3</option>
+                            <option value="rgb">RGB</option>
+                            <option value="rgba">RGBA</option>
+                            <option value="hsl">HSL</option>
+                            <option value="hsla">HSLA</option>
+                        </select>
+                        <div id="saveReset">
+                            <button id="save">Save</button>
+                            <button id="reset">Reset</button>
+                        </div>
+                    </div>
+                    <div id="sliders" class="controler">
+                        <h5>Controls:</h5>
+                        <div class="all">
+                            <label id="s1l" for="slide1">Red:</label>
+                            <div class="slide">
+                                <input id="s1s" class="colSlider" type="range" name="slide1" id="" min="0" max="255">
+                                <span id="s1d" class="sDisp"></span>
+                            </div>
+                        </div>
+                        <div class="all">
+                            <label id="s2l" for="slide2">Green:</label>
+                            <div class="slide">
+                                <input id="s2s" class="colSlider" type="range" name="slide2" id="" min="0" max="255">
+                                <span id="s2d" class="sDisp"></span>
+                            </div>    
+                        </div>
+                        <div class="all">
+                            <label id="s3l" for="slide3">Blue:</label>
+                            <div class="slide">
+                                <input id="s3s" class="colSlider" type="range" name="slide3" id="" min="0" max="255">
+                                <span id="s3d" class="sDisp"></span>
+                            </div>
+                        </div>
+                        <!-- <div id="saveReset" class="all">
+                            <button id="save">Save</button>
+                            <button id="reset">Reset</button>
+                        </div> -->
+                    </div>
+                </div>
+            </main>
+
+            <!-- "last 5 color" tiles and footer notes  -->
+            <footer class="footer">
+                <h4>Last 5 Colors:</h4>
+                <div class="tiles">
+                    <div id="1" class="tile tile1 hide">
+                        <div class="primary"></div>
+                        <div class="secondary"></div>
+                    </div>
+                    <div id="2" class="tile tile2 hide">
+                            <div class="primary"></div>
+                            <div class="secondary"></div>
+                        </div>
+                    <div id="3" class="tile tile3 hide">
+                        <div class="primary"></div>
+                        <div class="secondary"></div>
+                    </div>
+                    <div id="4" class="tile tile4 hide">
+                        <div class="primary"></div>
+                        <div class="secondary"></div>
+                    </div>
+                    <div id="5" class="tile tile5 hide">
+                        <div class="primary"></div>
+                        <div class="secondary"></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- linked .jsfile -->
+        <script src="assets/JS/colors.js"></script>
+    </body>
+</html>

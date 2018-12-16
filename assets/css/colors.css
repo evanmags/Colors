@@ -1,0 +1,272 @@
+/* Styles organized by specificity and alphabetically*/
+/* all styles are original work */
+
+/* golbal styles */
+*{
+    margin:0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5em;
+    transition: all .3s;
+    color: #36363A;
+}
+
+body{
+    transition: background .2s;
+}
+
+button{
+    background: none;
+    outline: none;
+    box-sizing: border-box;
+    color: #5d666d;
+    padding: 3px 7px;
+    font-size: .9em;
+    font-weight: 700;
+    max-width: 48%;
+    border: 1px solid #8897a2;
+    border-radius: 3px;
+}
+
+button:hover{
+    color: #f4f7fb;
+    background: #5d666d;
+}
+
+button:hover i{
+    color: #f4f7fb;;
+}
+
+i{
+    color: #5d666d;
+}
+
+h1{
+    font-size: 3em;
+    font-style: italic;
+}
+
+hr{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border: 1px solid #8897a2;
+    border-radius: 5px;
+}
+
+p{
+    font-size: 1em;
+    min-height: 1.5em;
+}
+
+/* class styles */
+.all{
+    max-height: 33%;
+    width: 100%;
+}
+
+.all label{
+    float: left;
+}
+
+.buttons{
+    margin: 1vh, 0;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons div{
+    width: 32%;
+}
+
+.colSlider{
+    align-self: center;
+}
+
+.container{
+    width: 45%;
+    max-width: 700px;
+    height: 50vh;
+    max-height: 400px;
+    min-height: 12rem;
+    margin: 5% auto 0;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #f4f7fbcf;
+    border: 1px solid #8897a2;
+    border-radius: 5px;
+    transition: all .3s;
+    box-shadow: 1px 1px 8px 2px rgba(171, 171, 172, .5);
+}
+
+.controler{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
+
+.container-column{
+    margin: auto;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.footer{
+    width: 45%;
+    height: 15vh;
+    margin: 3% auto;
+    border-radius: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+.hidden{
+    opacity: 0;
+    height: 0vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+.inst{
+    overflow-y: scroll;
+    max-height: 7em;
+    transition: height 0s;
+}
+
+.large{
+    height: 75vh;
+    max-height: 600px
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.next{
+    align-self: flex-end;
+}
+
+.primary{
+    position: relative;
+    z-index: 1;
+    width: 70%;
+    height: 7vh;
+    float: right;
+    border-radius: 2px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.secondary{
+    position: relative;
+    top: -40%;
+    z-index: 0;
+    width: 70%;
+    height: 7vh;
+    float: left;
+    border-radius: 2px;
+}
+
+.slide{
+    width: 65%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subContainer{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tiles{
+    width: 100%;
+    height: 10vh;
+    padding-top: 2.5%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.tile{
+    width: 14%;
+    height: 100%;
+    padding: .2em;
+    margin: 0 2.3%;
+    background-color: #f4f7fbcf;
+    border: 1px solid #8897a2;
+    border-radius: 5px;
+}
+
+/* id styles */
+#controlToggle{
+    align-self: flex-end;
+}
+
+#controls{
+    overflow: hidden;
+    height: 20vh;
+    width: 100%;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 2px solid #8897a2;
+}
+
+#controls.hidden{
+    opacity: 0;
+    height: 0vh;
+    padding:0;
+}
+
+#drop h5{
+    margin-top: 1vh;
+}
+
+#sliders{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#sliders h4{
+    text-align: center;
+}
+
+#save, #reset{
+    width: 75%;
+    margin: .25em;
+}
+
+#saveReset{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
