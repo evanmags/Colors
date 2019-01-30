@@ -500,5 +500,5 @@ function rgbToString(x, r, g, b, a, boolian){
         }
     }
 
-//functions to run on load, without user interaction
+//functions to run on load
 init();
